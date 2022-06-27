@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>portpolio_Kyungseo</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--구글웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/counter.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+</head>
+
+<body>
+    <header id="top">
+        <div class="inner-top clearfix">
+            <!--header 안쪽 묶어주는 태그-->
+
+            <h1 class="header-logo"><a href="index.html"><img src="images/header/logo_header.png" alt="logo"></a></h1>
+
+            <nav id="gnb">
+                <ul class="gnb-list clearfix">
+                    <li class="menu"><a href="#">COMPANY</a></li>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">SPC매거진</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">인재</a></li>
+                </ul>
+            </nav>
+
+            <div class="lang"> <a href="#">ENG</a></div>
+        </div>
+        <!--.inner-top-->
+
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="company">
+                <div class="left">
+                    <h2>Company</h2>
+                    <p>SPC의 역사는 파란 하늘, 황금빛 태양 아래 건강하게 맛과 정성을 담고<br> 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나 69년을<br> 한결같이 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나,<br> 상생의 가치를 지켜온 SPC. 많은 분들의 넘치는 사랑을 받았으며<br> 대한민국 으뜸의 자리에도 올랐습니다.<br>
+                        <br><span>함께 나누는 기쁨 Happy Smile, SPC</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <ol class="lnb">
+                        <li><a href="sub/sub_spc.html">SPC</a></li>
+                        <li><a href="sub/sub_spcway.html">SPC WAY</a></li>
+                        <li><a href="sub/sub_globalspc.html">Global SPC</a></li>
+                        <li><a href="sub/sub_foodlab.html">식품생명공학연구소</a></li>
+                    </ol>
+                </div>
+                <!--.right-->
+            </div>
+            <!--#company-->
+        </div>
+        <div class="submenu">
+            <div class="s-menu clearfix" id="brands">
+                <div class="left">
+                    <h2>Brands</h2>
+                    <p>1945년 상미당으로 출발한 SPC그룹의 반세기 넘는 역사와 전통을<br> 이어온 기업으로서 누구에게나 친숙한 수많은 히트제품을 선보이며<br> 제빵 산업의 발전을 이끌고 국민 식생활 개선에 이바지해왔습니다<br> 이제는 이러한 경험을 기반으로 식품산업을 선도하는<br> 세계적인 브랜드로 거듭나겠습니다.</p>
+                </div>
+                <div class="right">
+                    <ol class="lnb brand-lnb">
+                        <li><a href="sub/sub_brand_parisbaguette.html">PARIS BAUGUETTE</a></li>
+                        <li><a href="sub/sub_brand_samlip.html">SAMLIP</a></li>
+                        <li><a href="sub/sub_brand_baskinrobins.html">BASKIN ROBINS</a></li>
+                        <li><a href="sub/sub_brand_dunkin.html">DUNKIN</a></li>
+                        <li><a href="sub/sub_brand_pascucci.html">PASCUCCI</a></li>
+                        <li><a href="sub/sub_brand_shakeshake.html">SHAKE SHAKE</a></li>
+                        <li><a href="sub/sub_brand_eggslut.html">EGG SLUT</a></li>
+                        <li><a href="sub/sub_brand_happypoint.html">HAPPY POINT</a></li>
+                        <li><a href="sub/sub_brand.html">전체브랜드보기</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!--#brands-->
+        </div>
+        <div class="submenu">
+            <div class="s-menu clearfix" id="spc-magazine">
+                <div class="left">
+                    <h2>SPC Magazine</h2>
+                    <p>SPC 가장 빠르게 만나는 SPC그룹 소식<br>SPC MAGAZINE은 SPC 그룹 임직원, 가맹점, 고객을 위한 공간으로<br> 그룹의 다양한 소식을 가장 먼저 전해드리고 있습니다.<br> 행복한 이야기와 유익한 정보를 담아내 보여드리고자합니다.
+                    </p>
+                </div>
+                <div class="right">
+                    <p><a href="#" class="magazine">SPC 매거진 바로가기</a></p>
+                </div>
+            </div>
+            <!--#spc-magazine-->
+        </div>
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="social-share">
+                <div class="left">
+                    <h2>사회공헌</h2>
+                    <p>SPC행복한재단은 SPC그룹의 ‘國利民福 (국리민복)에 寄與(기여) 한다’는<br> 회사설립이념 및 사훈에 따라 우리사회의 소외되고 어려운 이웃들에 대한<br> 복지사업을 수행하여 사회복지 증진에 기여함을 목적으로 2011년 12월에<br> 설립하였습니다 SPC행복한재단이 생각하는 최선의 복지사업은<br> 단순히 거저 주는 것이 아니라, 어려운 환경과 장애로 인해 꿈과 희망을<br> 잃어버린 이웃들에게 다시 희망을 찾고 스스로의 힘으로 행복하게<br> 살아갈 수 있도록, 배움의 기회와 일자리를 제공하는 것이라고 생각합니다.</p>
+                </div>
+                <div class="right">
+                    <p><a href="sub/sub_social.html">사회공헌 소식 보러가기</a></p>
+                </div>
+            </div>
+            <!--#social-share-->
+        </div>
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="job">
+                <div class="left">
+                    <h2>인재</h2>
+                    <p>SPC그룹의 핵심가치는 SPC 문화를 구성하는 신조이며 최고의 기업으로<br> 성장할 수 있었던 성공 DNA 입니다.
+                        핵심가치를 지키고 실천할 때<br> SPC그룹이 추구하는 행복한 세상이 펼쳐 집니다.</p>
+                </div>
+                <div class="right">
+                    <ol class="lnb">
+                        <li><a href="#" class="gtjob">인재채용</a></li>
+                        <li><a href="sub/sub_job.html">인재양성</a></li>
+                    </ol>
+                </div>
+                <!--.right-->
+            </div>
+            <!--#job-->
+
+        </div>
+        <!--.submenu-->
+
+
+
+
+    </header>
+
+    <section id="main-section">
+        <!--<div class="main-wrap">-->
+        <ul class="main-box">
+            <li id="main-page1" class="main active" data-seq="0">
+                <img src="images/slider/slider1.jpg" alt="">
+                <div class="main-txt">
+                    <h3>Hearty Sincerity</h3>
+                    <p>제철 재료를 사용하며 청결한 조리, 갓 구워낸 따끈한 빵에 입맛을 살리는<br> 요리를 곁들이고 마지막으로 한번 더 꼼꼼하게 점검합니다.<br> 세상에서 가장 특별한 음식을 드리고자 어디서나 한결같은<br> spc의 정성이 있어 세상은 더 건강해집니다.</p>
+                </div>
+            </li>
+            <li id="main-page2" class="main" data-seq="1">
+                <img src="images/slider/slider2.jpg" alt="">
+                <div class="main-txt">
+                    <h3>Global SPC</h3>
+                    <p>"신시장을 끊임없이 개척해 세계 속에 뻗어나갈 SPC의 도약을 기대해 주세요"</p>
+                </div>
+            </li>
+            <li id="main-page3" class="main" data-seq="2">
+                <img src="images/slider/slider3.jpg" alt="">
+                <div class="main-txt">
+                    <h3>Aromatic Realxtion</h3>
+                    <p>"<b>SPC</b>가 전하는 깊고 그윽한 향기가 있어 세상은 더 여유로워집니다."</p>
+                </div>
+            </li>
+            <li id="main-page4" class="main" data-seq="3">
+                <img src="images/slider/slider4.jpg" alt="">
+                <div class="main-txt">
+                    <h3><b>SPC</b>의 특별한 우리밀 사랑</h3>
+                    <p>우리밀을 활용한 다양한 제품을 개발하고 우리밀 사랑 캠페인을 펼치며<br> 그 소중한 뜻과 건강한 맛을 널리 전하고 있습니다.가장 좋은 빵을 드리고 싶은<br> spc그룹의 마음을 우리밀 사랑으로 더 크게 키워 가겠습니다”</p>
+                </div>
+
+            </li>
+            <!--.main-page4-->
+        </ul>
+        <!--.main-box-->
+
+        <!--메인탭-->
+        <!--a태그는 클래스로 연결해서 이동할 수 없어요-->
+        <ul class="main-tab-wrap">
+            <li class="main-tab on">
+                <a href="#main-page1" class="on">Hearty Sincerity <br>
+                </a>
+            </li>
+            <li class="main-tab">
+                <a href="#main-page2">Global spc <br></a>
+            </li>
+            <li class="main-tab">
+                <a href="#main-page3">Aromatic Realxtion <br>
+                </a>
+            </li>
+            <li class="main-tab">
+                <a href="#main-page4">SPC Love <br></a>
+            </li>
+        </ul>
+        <!--</div>-->
+        <!--slide-wrap-->
+    </section>
+
+    <section id="page1">
+        <div class="dounut-wrap clearfix">
+            <div class="dounut-head">
+                <h2><span>SPC</span> VALUE</h2>
+                <p>창립 이래 지켜온 나눔과 상생의 가치를 기억하며,<br> 함께 나눈 기쁨을 아는 <span>SPC</span> 그룹입니다.</p>
+            </div>
+            <div class="donut-box donut1">
+                <img src="images/dounut/dounut1.png" alt="">
+                <h3>
+                    <span id="count1">0</span>
+                    <!--<span class="count1">167,576</span> -->
+                    개<span class="square"></span>
+                </h3>
+                <p>SPC 임직원<br>자원봉사 참여시간</p>
+            </div>
+            <div class="donut-box donut2">
+                <img src="images/dounut/dounut2.png" alt="">
+                <h3>
+                    <span id="count2">0</span>
+                    <!--<span class="count2">27</span>-->
+                    억원<span class="square"></span>
+                </h3>
+                <p>SPC 행복한 장학금<br> 지원금액</p>
+            </div>
+
+            <div class="donut-box donut3">
+                <img src="images/dounut/dounut3.png" alt="">
+                <h3>
+                    <span id="count3">0</span>
+                    <!--<span class="count3">810</span>-->
+                    억원<span class="square"></span>
+                </h3>
+                <p>SPC 푸드뱅크<br>연간지원금액</p>
+            </div>
+            <div class="donut-box donut4">
+                <img src="images/dounut/dounut4.png" alt="">
+                <h3>
+                    <span id="count4">0</span>
+                    <!--<span class="count4">1,792,344</span> -->
+                    개<span class="square"></span>
+                </h3>
+                <p>SPC 행복한 빵<br> 지원개수</p>
+            </div>
+        </div>
+        <!--donut-wrap-->
+    </section>
+
+    <section id="page2">
+        <div class="business-wrap">
+            <div class="business-box">
+                <h2><span>SPC</span> BUISINESS</h2>
+                <ul class="business-list clearfix">
+                    <!--jQuery로 hover했을 때 이미지 경로 변경하기~-->
+                    <li class="icon-box">
+                        <div><img src="images/buisiness/pariscroissant1.png" alt=""></div>
+                        <a href="#" class="icon1">
+                            <img src="images/buisiness/icon1.png" alt="">
+                            <p>식품</p>
+                        </a>
+                    </li>
+                    
+                    <li class="icon-box">
+                        <div class="i-even"><img src="images/buisiness/truck1.png" alt=""></div>
+                        <a href="#" class="icon2 i-even">
+                            <img src="images/buisiness/icon2.png" alt="">
+                            <p>유통</p>
+                        </a>
+                    </li>
+                    
+                    <li class="icon-box">
+                        <div><img src="images/buisiness/secta1.png" alt=""></div>
+                        <a href="#" class="icon3">
+                            <img src="images/buisiness/icon3.png" alt="">
+                            <p>IT / 서비스</p>
+                        </a>
+                    </li>
+                    
+
+                    <li class="icon-box">
+                        <div class="i-even"><img src="images/buisiness/SPCfactory1.png" alt=""></div>
+                        <a href="#" class="icon4 i-even">
+                            <img src="images/buisiness/icon4.png" alt="">
+                            <p>원료 / 포장</p>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="page3">
+        <div class="spcway-wrap clearfix">
+            <div class="spcway-box-left">
+                <div class="spcway-left-txt">
+                    <span></span>
+                    <h3><b>SPC</b> WAY</h3>
+                    <p>최고의 품질과 고객중심,<br>창의적 도전으로 세상을 행복하게 한다.</p>
+                    <p><b>창의적 도전정신</b>을 바탕으로 맛있고 건강한 제품을 통해 <br>언제나 <b>고객의 행복</b>과 함께 하겠습니다. </p>
+                </div>
+            </div>
+
+            <ul class="spcway-list">
+                <li class="spcway-box-right spc-photo1">
+                    <div class="spcway-box1">
+                        <div class="spcway-txt">
+                            <h4>Innovation</h4>
+                            <!--h4:after로 밑줄 제작-->
+                            <h5>혁신</h5>
+                            <p>우리는 변화를 추구하며<br>열정적으로 도전한다.</p>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="spcway-box-right spc-photo2">
+                    <div class="spcway-box2">
+                        <div class="spcway-txt">
+                            <h4>Integrity</h4>
+                            <!--h4:after로 밑줄 제작-->
+                            <h5>정직</h5>
+                            <p>우리는 기본에 충실하며<br>올바르게 행동한다</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="spcway-box-right spc-photo3">
+                    <div class="spcway-box3">
+                        <div class="spcway-txt">
+                            <h4>Integration</h4>
+                            <!--h4:after로 밑줄 제작-->
+                            <h5>협업</h5>
+                            <p>우리는 다양성을 존중하며<br>유기적으로 협력한다.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="spcway-box-right spc-photo4"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page4">
+        <div class="brands-wrap clearfix">
+            <h2>BRANDS</h2>
+
+            <div class="pg-btn clearfix">
+                <a href="#" class="prev">&lt;</a>
+                <p><span>1</span> / 4</p>
+                <a href="#" class="next">&gt;</a>
+            </div>
+
+            <div class="brands-list">
+                <div class="brand-box">
+                    <img src="images/brands/brands1.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands1-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>PASCUCCI</h3>
+
+                        <p>130년 전통의 블랜딩과 로스팅<br> 노하우로 완성한 정통 이탈리안<br> 에스프레소 커피 전문점</p>
+                    </div>
+                </div>
+
+                <div class="brand-box">
+                    <img src="images/brands/brands2.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands2-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>Baskin Robins</h3>
+                        <p>즐거움을 파는 최고의<br> 프리미엄 아이스크림 브랜드</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands3.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands3-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>Ragrillia</h3>
+                        <p>새롭게 해석한 이탈리안 요리와<br> 와인과 다양한 맥주를<br> 함께 즐길 수 있는 캐주얼 레스토랑</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands4.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands4-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>Eggslut</h3>
+                        <p>에그슬럿, 달걀이 주는<br> 다채로운 영감으로 부터 시작하는<br> 올데이 파인캐주얼 브랜드</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands5.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands5-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>PARIS BAUGUETTE</h3>
+                        <p>언제나 갓 구운 신선한 빵을 제공하여<br> 고객에게 사랑받는 <br>프랜차이즈 1위 브랜드</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands6.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands6-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>DUNKIN</h3>
+                        <p>던킨 도너츠는 언제나 맛있는 도넛과<br> 커피를 제공하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands7.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands7-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>TEA TRA</h3>
+                        <p>세계 곳곳에서 직접 찾아낸 원료를<br> 새로운 감성과 색다른 감각으로 <br>블렌딩한 프리미엄 티 브랜드</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands8.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands8-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>Jamba Juice</h3>
+                        <p>캘리포니아에서 온 건강한 주스 &amp; 스무디 전문점<br>Life better blended!</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands9.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands9-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>PARIS CROISSANT</h3>
+                        <p>프리미엄 베이커리로 매일 생산되는<br> 다양한 메뉴와 음료를 제공하여<br> 편안하고 여유로운 휴식을 제공합니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands10.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands10-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>SHAKE SHAKE</h3>
+                        <p>프리미엄 식재료를 사용한<br> 클래식 아메리칸 스타일의 맛있고<br> 건강한 수제버거 입니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands11.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands11-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>PIG IN THE GARDEN</h3>
+                        <p>신선한 제철재료를 이용한 <br>균형잡힌 고품질의 파인캐주얼샐러드 전문점</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands12.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands12-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>VERA</h3>
+                        <p>나폴리 피자협회 및 세계의<br> 이탈리안 레스토랑 인증을 받은 베라는 <br>정통 이탈리아의 맛을 전해드립니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands13.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands13-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>그릭슈바인</h3>
+                        <p>그릭슈바인은 행운의 돼지를 뜻하는<br> 독일어로 정통 독일식 메쯔거라이의<br> 맛과 비법을 추구합니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands14.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands14-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>SPC 삼립</h3>
+                        <p>삼립은 깊은 역사로 유명한<br> 국내 대표 제빵 브랜드로 국민들에게 <br>많은 사랑을 받고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands15.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands15-1.png" alt="">
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>빚은</h3>
+                        <p>전통떡에서 시작해 현대적 메뉴까지<br> 다양하고 건강한 제품으로<br> 모두에게 사랑받는 브랜드입니다.</p>
+                    </div>
+                </div>
+                <div class="brand-box">
+                    <img src="images/brands/brands16.png" alt="">
+                    <div class="caption">
+                        <!--hover했을 때 보여질 내용-->
+                        <img src="images/brands/brands16-1.png" alt="">
+
+                    </div>
+
+                    <div class="brand-txt">
+                        <span></span>
+                        <h3>HAPPY POINT</h3>
+                        <p>고객에게 더 큰 행복을 드리려는<br> SPC그룹의 따뜻한 마음이 담겨있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!--brands-list-->
+        </div>
+        <!--BRANDS-WRAP-->
+
+    </section>
+
+    <section id="page5">
+        <div class="magazine-wrap clearfix">
+            <h2><span>SPC</span> MAGAZINE</h2>
+            <ul class="magazine-top clearfix">
+                <li class="magazine-box big">
+                    <div class="photo-box">
+                        <img src="images/magazine/news1.jpg" alt="">
+                    </div>
+                    <div class="m-txt">
+                        <p class="date sizing">2021.02.18</p>
+                        <h3>황금빛 저지종 젖소에 나온 프리미엄 우유<br>SPC삼립, 프리미엄 우유 ’로얄리치 저지밀크’ 출시</h3>
+                    </div>
+                </li>
+                <li class="magazine-box small">
+                    <div class="photo-box"><img src="images/magazine/news2.jpg" alt=""></div>
+                    <div class="m-txt">
+                        <p class="date">2021.01.28</p>
+                        <h3>SPC 생명공학연구소 서진호 소장<br>2021년 경영 키워드<br>품질 경영에 대해 묻다</h3>
+                    </div>
+                </li>
+                <li class="magazine-box small">
+                    <div class="photo-box">
+                        <img src="images/magazine/news3.jpg" alt="">
+                    </div>
+                    <div class="m-txt">
+                        <p class="date">2021.01.26</p>
+                        <h3>신축년을 이끌 취향소비 트렌드<br>2021년은 ’취향소비’ 시대</h3>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="magazine-bottom">
+                <li class="magazine-box small">
+                    <div class="photo-box">
+                        <img src="images/magazine/news4.jpg" alt="">
+                    </div>
+                    <div class="m-txt">
+                        <p class="date">2021.01.07</p>
+                        <h3>푸드 디렉터 김유경<br>2021 다가오는 푸드트렌드</h3>
+                    </div>
+                </li>
+                <li class="magazine-box small">
+                    <div class="photo-box">
+                        <img src="images/magazine/news5.jpg" alt="">
+                    </div>
+                    <div class="m-txt">
+                        <p class="date">2021.01.21</p>
+                        <h3>SPC 그룹의 제안제도<br>혁신과 개선의 기반</h3>
+                    </div>
+                </li>
+                <li class="magazine-box big">
+                    <div class="photo-box">
+                        <img src="images/magazine/news6.jpg" alt="">
+                    </div>
+                    <div class="m-txt">
+                        <p class="date">2021.02.17</p>
+                        <h3>나눔은 기업의 사명, <br>SPC그룹 설 맞이 사회공헌활동</h3>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+        <!--magazine-wrap-->
+
+    </section>
+
+    <div class="family-company clearfix">
+        <ul class="family-company-wrap">
+            <li><a href="#"><img src="images/footer/spc_family1.png" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer/spc_family7.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+
+    <footer>
+
+        <div class="footer-wrap">
+            <div class="footer-top clearfix">
+                <ul class="link">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">이메일수집거부</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">거래희망사전등록</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+
+                <div class="family-list">
+                    <!--<select name="" id=""></select>-->
+                    <a href="#">브로셔 다운로드</a>
+                    <select>
+                        <option value="family-site">
+                            Family Site
+                        </option>
+                        <option value="family-site">
+                            (주)비알코리아
+                        </option>
+                        <option value="family-site">
+                            (주)spc삼립
+                        </option>
+                        <option value="family-site">
+                            SPC PACK
+                        </option>
+                        <option value="family-site">
+                            SPC GFS
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom clearfix">
+                <div class="info">
+                    <div><img src="images/footer/logo_footer.png" alt="푸터로고"></div>
+                    <p>서울시 서초구 양재동 남부순환로2620 (양재동 11 - 149) SPC그룹 <br>COPYRIGHT SPC ALL RIGHTE RESERVED</p>
+                </div>
+
+                <div class="sns">
+                    <a href="#"><img src="images/footer/instagram.png" alt="sns"></a>
+                    <a href="#"><img src="images/footer/facebook.png" alt="sns"></a>
+                </div>
+            </div>
+            <!--bottom-->
+        </div>
+        <!--footer-wrap-->
+    </footer>
+</body>
+
+</html>

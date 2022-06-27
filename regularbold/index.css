@@ -1,0 +1,304 @@
+@charset 'utf-8';
+
+/*reset css*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+
+/*float 해제하는 가상 선택자*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*영문폰트 적용*/
+.eng {
+	font-family: 'PT Serif', serif;
+}
+
+
+/*main css*/
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+header h1 {
+	width: 30%;
+	float: left;
+	/*background-color: yellow;*/
+	text-align: center;
+}
+header h1 img {
+	width: 60%;
+	vertical-align: middle;
+}
+header nav {
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+	/*background-color: lightblue;*/
+}
+header nav ul li {
+	width: 20%;
+	display: inline-block;
+	font-size: 20px;
+	/*outline: 2px solid red;*/
+	padding-top: 2%;
+}
+header nav ul li a {
+	color: black;
+	padding-bottom: 6px;
+}
+header nav ul li a:hover {
+	color: #00c5b4;
+	border-bottom: 3px solid #00c5b4;
+}
+
+
+header .sns {
+	width: 20%;
+	float: right;
+	/*background-color: darkseagreen;*/
+	text-align: right;
+}
+header .sns>a>img {
+	width: 46px;
+}
+header .sns>a:first-child>img {
+	padding-right: 10px;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*intro*********************************/
+.intro {
+	width: 100%;
+	height: 550px;
+	/*background-color: yellow;*/
+	background: url(images/rb_logo.png) no-repeat right bottom/550px;
+	position: relative;
+}
+.intro .left-box {
+	width: 34%;
+	position: absolute;
+	top: 26%;
+}
+.intro .left-box .des-en {
+	color: darkgray;
+	font-size: 1.4em;
+	/*line-height: 30px;*/
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+.intro .left-box .des-ko {
+	font-size: 1.2em;
+}
+.intro .btn {
+	font-size: 1.2em;
+	border: 2px solid #e64461;
+	border-radius: 6px;
+	padding: 12px 20px;
+	color: #e64461;
+	position: absolute;
+	bottom: 14%;
+}
+.intro .btn:hover {
+	background-color: #e64461;
+	font-weight: bold;
+	color: white;
+}
+
+/*******works*******************************/
+.works {
+	margin-top: 80px;
+}
+.works .img a {
+	display: block;
+}
+.works .img-box {
+	width: 23%;
+	margin: 1%;
+	/*padding: 1%;*/
+	float: left;
+	overflow: hidden;
+}
+.works .img-box img {
+	transition: all .5s;
+	width: 100%;
+	display: block;
+}
+.works .img-box img:hover {
+	transform: scale(1.5);
+}
+
+
+/**************about********************/
+
+.about {
+	margin-top: 80px;
+	/*background-color: yellow;*/
+	height: 460px;
+	background: url(images/people_01-1.png) no-repeat bottom/contain;
+	font-family: 'PT Serif', serif;
+	position: relative;
+}
+.about h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 100;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.about p {
+	width: 60%;
+	font-size: 1.2em;
+	margin: 0 auto;
+	text-align: center;
+}
+.about .btn-more {
+	font-size 1.2em;
+	padding: 14px;
+	border: 1px solid #00c5b4;
+	color: #00c5b4;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.about .btn-more:hover {
+	background-color: #00c5b4;
+	color: #fff;
+}
+
+/*******NEWS****************/
+.news {
+	margin-top: 80px;
+}
+.news h2 {
+	font-size: 2em;
+	font-family: 'PT Serif', serif;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.news p {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.news .box {
+	width: 32%;
+	margin-right: 1%;
+	float:left;
+	/*outline: 2px solid red;*/
+}
+.news .box img {
+	width: 100%;
+}
+.news .box .title a{
+	color: #333;
+	margin-top: 40px;
+	height: 40px;
+}
+.news .box .title a:hover {
+	color: darkseagreen;
+	text-decoration: underline;
+}
+.news .box .date {
+	font-size: 0.9em;
+	color: darkgray;
+}
+/**********contact***************************/
+.contact {
+	margin-top: 80px;
+	width: 100%;
+	height: 500px;
+	background: url(images/rb-03.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+.contact h2 {
+	color: white;
+	padding-top: 80px;
+	font-size: 3em;
+}
+.contact p {
+	font-size: 1.2em;
+	padding-top: 30px;
+	color: white;
+}
+.contact .btn-more2 {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 20px;
+	border-radius: 7px;
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	/*margin-left: -57.9845px;*/
+	transform: translateX(-50%);
+}
+.contact .btn-more2:hover {
+	background-color: black;
+	border: 1px solid #000;
+	font-weight: bold;
+}
+
+
+/**********footer********************/
+
+footer {
+	width: 80%;
+	margin: 0 auto;
+}
+footer .footer-box {
+	width: 33.3%;
+	float: left;
+	margin: 60px 0;
+}
+footer .footer-box h2 {
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+footer .footer-box p {
+	font-size: 0.9em;
+	color: darkgray;
+}
+footer .top {
+	clear: both;
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

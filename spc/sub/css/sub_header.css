@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+    color: #333;
+	/*box-sizing: border-box;*/
+}
+
+body {
+	font-family: '나눔바른고딕'
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+@font-face {
+	font-family: 'DX경필명조';
+	src: url(../font/transfonter/DXKPMB-KSCpc-EUC-H.eot);
+	src: url(../font/transfonter/DXKPMB-KSCpc-EUC-H.eot?#iefix) format('embedded-opentype'),
+		url(../font/transfonter/DXKPMB-KSCpc-EUC-H.woff) format('woff'),
+		url(../font/transfonter/DXKPMB-KSCpc-EUC-H.woff2) format('woff2'),
+		url(../font/transfonter/DXKPMB-KSCpc-EUC-H.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: 'DX시인과나';
+	src: url(../font/transfonter/DXPnM-KSCpc-EUC-H.eot);
+	src: url(../font/transfonter/DXPnM-KSCpc-EUC-H.eot?#iefix) format('embedded-opentype'),
+		url(../font/transfonter/DXPnM-KSCpc-EUC-H.woff) format('woff'),
+		url(../font/transfonter/DXPnM-KSCpc-EUC-H.woff2) format('woff2'),
+		url(../font/transfonter/DXPnM-KSCpc-EUC-H.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: '나눔고딕';
+	src: url(../font/transfonter/NanumGothic.eot);
+	src: url(../font/transfonter/NanumGothic.eot?#iefix) format('embedded-opentype'),
+		url(../font/transfonter/NanumGothic.woff) format('woff'),
+		url(../font/transfonter/NanumGothic.woff2) format('woff2'),
+		url(../font/transfonter/NanumGothic.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: '나눔바른고딕';
+	src: url(../font/transfonter/NanumBarunGothic.eot);
+	src: url(../font/transfonter/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+		url(../font/transfonter/NanumBarunGothic.woff) format('woff'),
+		url(../font/transfonter/NanumBarunGothic.woff2) format('woff2'),
+		url(../font/transfonter/NanumBarunGothic.ttf) format('ttf'),
+
+		url(../font/transfonter/NanumBarunGothicBold.woff) format('woff'),
+		url(../font/transfonter/NanumBarunGothicBold.woff2) format('woff2'),
+		url(../font/transfonter/NanumBarunGothicBold.ttf) format('ttf'),
+		url(../font/transfonter/NanumBarunGothicLight.woff) format('woff'),
+		url(../font/transfonter/NanumBarunGothicLight.woff2) format('woff2'),
+		url(../font/transfonter/NanumBarunGothicLight.ttf) format('ttf'),
+
+}
+
+
+h2 span {
+	font-weight: bold;
+}
+/*header***********************************/
+#top {
+	width: 100%;
+	height: 80px;
+	background: rgba(0, 0, 0, .6);
+	/*position: fixed;*/
+	z-index: 999999999;
+}
+
+/*제이쿼리 조절*/
+.sc-top {
+	height: 50px !important;
+    background-color: rgba(3, 3, 3, .8) !important;
+}
+.sc-top .header-logo img {
+	width: 70px;
+	height: 28px;
+}
+.sc-top .gnb-list {
+	margin-top: 20px;
+	margin-left: 150px;
+}
+.sc-top .gnb-list a {
+	font-size: 18px;
+}
+.sc-top .lang {
+	display: none;
+}
+
+
+.inner-top {
+	/*width: 1200px;*/
+    width: 100%;
+    max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	/*outline: 2px solid red;*/
+}
+
+.header-logo {
+    width: 16%;
+    height: 80px;
+	/*margin-top: 8px;*/
+	float: left;
+    /*outline: 3px solid red;*/
+}
+.header-logo a {
+    display: block;
+}
+.header-logo img {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+}
+#gnb {
+    float: left;
+}
+
+.gnb-list {
+	margin-top: 43px;
+	margin-left: 150px;
+	/*float: left;*/
+	/*outline: 2px solid lime;*/
+}
+
+.gnb-list li {
+	margin-right: 80px;
+	float: left;
+	font-size: 20px;
+}
+.gnb-list li a {
+	color: #eee;
+}
+.gnb-list li:hover a {
+	color: rgb(35, 175, 227);
+	text-decoration: underline;
+}
+
+.lang {
+    float: right;
+    margin-top: 43px;
+}
+
+.lang a {
+	font-size: 14px;
+	padding: 4px 20px;
+	border: 1px solid #eee;
+	color: #eee;
+	border-radius: 20px;
+	/*margin-top: 42px;*/
+	/*margin-right: 20px;*/
+	/*float: right;*/
+	font-family: 'Arial'
+}
+
+
+
+/*depth-menu**********************************/
+
+.submenu {
+	width: 100%;
+    height: 580px; /*레이아웃 확인 후 적용*/
+	font-family: 'Arial';
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: rgba(238,238,238,0.7);
+	display:none;
+	overflow: hidden;
+}
+.s-menu {
+    background-color: rgba(238,238,238,0.8);
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+	/*display: none;*/
+}
+/*.s-menu::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    background-color: #ccc;
+}
+.s-menu::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    background-color: #ccc;
+}*/
+.submenu.on {
+    display: block !important; 
+}
+/*.s-menu {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #eee;
+	padding-bottom: 60px;
+	position: absolute;
+	top: 80px;
+}*/
+
+/*제이쿼리에서 조절*/
+/*.sc-top .s-menu {
+	position: absolute;
+	top: 50px;
+}*/
+
+.s-menu .left {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.s-menu .right {
+	text-align: center;
+	width: 50%;
+	font-size: 18px;
+	border-left: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+.s-menu .right .lnb li a {
+	font-weight: 500;
+	color: #6e6e6e;
+}
+
+.s-menu .right .lnb li:hover a {
+	color: rgb(35, 175, 227);
+	text-decoration: underline;
+	display: block;
+}
+
+.s-menu .right p:hover a {
+	color: rgb(35, 175, 227);
+	text-decoration: underline;
+	display: block;
+}
+
+.s-menu .left h2 {
+	color: #333;
+	font-weight: 600;
+	font-family: 'arial';
+	margin-bottom: 20px;
+}
+
+.s-menu .left p {
+	line-height: 1.4;
+}
+
+#company .left {
+	float: left;
+	/*background-color: yellow;*/
+}
+#company .left span {
+    color: red;
+    font-weight: 500;
+    color: rgb(35, 175, 227);
+}
+
+#company .right {
+	text-align: center;
+	float: right;
+	/*background-color: greenyellow;*/
+}
+
+#company .right .lnb li {
+	padding-top: 15px;
+}
+
+#brands .left {
+	float: left;
+}
+
+#brands .right {
+	float: right;
+}
+
+#brands .right .brand-lnb {
+	transform: translateX(8%);
+}
+
+#brands .right .brand-lnb li {
+	width: 28%;
+	height: 120px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #edece0;
+	float: left;
+	margin: 5px;
+	padding: 3px;
+}
+
+#brands .right .brand-lnb li a {
+	line-height: 120px;
+	font-weight: 500;
+}
+
+#brands .right .brand-lnb li:hover a {
+	text-decoration: none;
+	font-weight: bold;
+    background-color: #67625d;
+    color: #edece0;
+}
+
+
+#spc-magazine .left {
+	float: left;
+	border-right: 1px solid lightgray;
+}
+
+#spc-magazine .right {
+	/*line-height: 120px;*/
+	float: right;
+	border-left: none;
+}
+
+
+#social-share .left {
+	border-right: 1px solid lightgray;
+	float: left;
+}
+
+#social-share .left p {
+	line-height: 24px;
+}
+
+#social-share .right {
+	line-height: 160px;
+	border-left: none;
+	float: right;
+}
+
+
+#job .left {
+	border-right: 1px solid lightgray;
+	float: left;
+}
+
+#job .right {
+	border-left: none;
+	float: right;
+}
+
+#job .right .lnb li {
+	padding-top: 15px;
+}
+
+/************서브배너**************************/
+
+.sub_banner {
+	width: 100%;
+	height: 300px;
+	/*margin-top: 50px;*/
+}
+.sub_banner img {
+	width: 100%;
+	height: 300px;
+}
+
+
+
+

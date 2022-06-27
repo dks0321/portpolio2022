@@ -1,0 +1,140 @@
+@charset 'utf-8';
+
+/*reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, ol ,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/*float 해제하는 가상선택자*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*******header***************************/
+header {
+	width: 100%;
+	background: rgb(255,255,255);
+	border-bottom: 1px solid rgb(238,238,238);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+header .lnb {
+	/*width: 100%;*/
+	background-color: lightgray;
+	height: 40px;
+	line-height: 40px;
+}
+header .lnb .inner-lnb{
+	width: 1200px;
+	/*background-color: yellow;*/
+	margin: 0 auto;
+	font-size: 14px;
+} 
+header .lnb .inner-lnb ul {
+	float: right;
+	/*height: 40px;*/
+}
+header .lnb .inner-lnb ul li{
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+	letter-spacing: -1px;
+}
+header .lnb .inner-lnb ul li:last-child {
+	
+	margin-right: 0;
+	width: 60px;
+	background: rgb(47,28,17) url(../img/ico_user_info_line.png) no-repeat center;
+	text-indent: -9999px;
+}
+header .lnb .inner-lnb ul li>a {
+	display: block;
+	color: #333;
+}
+header .lnb .inner-lnb ul li a:hover {
+	color: rgb(47.28,17);
+	font-weight: bold;
+}
+header .inner-header {
+	width: 1200px;
+	height: 100px;
+	/*background-color: yellow;*/
+	margin: 0 auto;
+}
+header .inner-header h1 {
+	width: 100px;
+	/*width: 70px;*/
+	height: 100px;
+	padding: 15px 0;
+	box-sizing: border-box;
+	float: left;
+}
+header .inner-header h1 a img {
+	height: 70px;
+	/*width: 100%;*/
+}
+header .inner-header nav {
+	/*outline: 3px solid red;*/
+	float: left;
+	margin-left: 100px;
+}
+header .inner-header nav ul li {
+	float: left;
+	line-height: 100px;
+	text-transform: uppercase;
+	font-family: Arial;
+	padding: 0 30px;
+}
+header .inner-header nav ul li a{
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(47,28,17);
+	letter-spacing: -0.2px;
+}
+header .inner-header nav ul li a:hover {
+	color: rgb(207,102,26);
+}
+#btnSearch {
+	float: right;	
+}
+#btnSearch a {
+	width: 20px;
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
+	background: url(../img/ico_search.png) no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

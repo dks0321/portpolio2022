@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>sub_spc</title>
+    <link rel="stylesheet" href="css/sub_header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/sub_header.js"></script>
+    <script>
+         $(window).scroll(function(){
+            
+            var scTop = $(this).scrollTop();
+            console.log(scTop); 
+             
+             $('#sec1').animate({
+                 opacity: '1'
+             },1000);
+            
+            if(scTop>500){
+                $('#sec2').animate({
+                    marginTop: '250px',
+                    opacity: '1'
+                },1000);
+            };
+            
+            if(scTop>2480){
+                 $('#sec3').animate({
+                    marginTop: '250px',
+                    opacity: '1'
+                },1000);
+            } 
+            
+        });
+        
+        
+    </script>
+
+    <style>
+        #sec1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            /*outline: 2px solid red;*/
+            margin-top: 200px;
+            opacity: 0;
+        }
+
+        .title-wrap1 {
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title-wrap1:after {
+            content: "";
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            border-top: 2px solid rgb(254, 206, 0);
+        }
+
+        .title-wrap1 h2 {
+            font-size: 70px;
+            font-weight: 400;
+            font-family: 'Noto Sans', sans-serif;
+            margin-right: 25px;
+            margin-bottom: 50px;
+            float: left;
+        }
+
+        .title-wrap1 h3 {
+            font-size: 30px;
+            line-height: 40px;
+            font-family: 'Noto Serif KR', serif;
+            font-weight: 500;
+            float: left;
+        }
+
+        .title-wrap1 h3 span {
+            color: rgb(35, 175, 227);
+            font-weight: 400;
+            font-size: 42px;
+        }
+
+        .ci-txt-wrap {
+            font-size: 20px;
+            line-height: 40px;
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        #sec2 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 400px;
+            opacity: 0;
+        }
+
+        .title-wrap2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .title-wrap2 h2 {
+            margin-bottom: 100px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .title-wrap2 p {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Noto Serif KR', serif;
+            margin-bottom: 100px;
+        }
+        .title-wrap2 h2:after {
+            content: "";
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            border-top: 2px solid rgb(254, 206, 0);
+            margin-top: 35px;
+        }
+
+        #sec3 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 400px;
+            opacity: 0;
+        }
+
+        .ceo-wrap h2 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin-bottom: 80px;
+        }
+
+        .ceo-wrap h2:after {
+            content: "";
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            border-top: 2px solid rgb(254, 206, 0);
+            margin-top: 35px;
+        }
+
+        .ceo-photo {
+            width: 50%;
+            float: left;
+        }
+
+        .ceo-photo img {
+            width: 600px;
+        }
+
+        .ceo-txt-wrap {
+            width: 50%;
+            padding: 0 70px;
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Nanum Gothic', sans-serif;
+            float: right;
+            margin-bottom: 50px;
+			text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <div class="inner-top clearfix">
+            <!--header 안쪽 묶어주는 태그-->
+
+            <h1 class="header-logo"><a href="../index.html"><img src="image/header/logo_header.png" alt="logo"></a></h1>
+
+            <nav id="gnb">
+                <ul class="gnb-list clearfix">
+                    <li class="menu"><a href="#">COMPANY</a></li>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">SPC매거진</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">인재</a></li>
+                </ul>
+            </nav>
+
+            <div class="lang"> <a href="#">ENG</a></div>
+        </div>
+        <!--.inner-top-->
+
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="company">
+                <div class="left">
+                    <h2>Company</h2>
+                    <p>SPC의 역사는 파란 하늘, 황금빛 태양 아래 건강하게 맛과 정성을 담고<br> 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나 69년을<br> 한결같이 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나,<br> 상생의 가치를 지켜온 SPC. 많은 분들의 넘치는 사랑을 받았으며<br> 대한민국 으뜸의 자리에도 올랐습니다.<br>
+                        <br><span>함께 나누는 기쁨 Happy Smile, SPC</span>
+                    </p>
+                </div>
+                <div class="right">
+                    <ol class="lnb">
+                        <li><a href="#">SPC</a></li>
+                        <li><a href="sub_spcway.html">SPC WAY</a></li>
+                        <li><a href="sub_globalspc.html">Global SPC</a></li>
+                        <li><a href="sub_foodlab.html">식품생명공학연구소</a></li>
+                    </ol>
+                </div>
+                <!--.right-->
+            </div>
+            <!--#company-->
+        </div>
+        <div class="submenu">
+            <div class="s-menu clearfix" id="brands">
+                <div class="left">
+                    <h2>Brands</h2>
+                    <p>1945년 상미당으로 출발한 SPC그룹의 반세기 넘는 역사와 전통을<br> 이어온 기업으로서 누구에게나 친숙한 수많은 히트제품을 선보이며<br> 제빵 산업의 발전을 이끌고 국민 식생활 개선에 이바지해왔습니다<br> 이제는 이러한 경험을 기반으로 식품산업을 선도하는<br> 세계적인 브랜드로 거듭나겠습니다.</p>
+                </div>
+                <div class="right">
+                    <ol class="lnb brand-lnb">
+                        <li><a href="sub_brand_parisbaguette.html">PARIS BAUGUETTE</a></li>
+                        <li><a href="sub_brand_samlip.html">SAMLIP</a></li>
+                        <li><a href="sub_brand_baskinrobins.html">BASKIN ROBINS</a></li>
+                        <li><a href="sub_brand_dunkin.html">DUNKIN</a></li>
+                        <li><a href="sub_brand_pascucci.html">PASCUCCI</a></li>
+                        <li><a href="sub_brand_shakeshake.html">SHAKE SHAKE</a></li>
+                        <li><a href="sub_brand_eggslut.html">EGG SLUT</a></li>
+                        <li><a href="sub_brand_happypoint.html">HAPPY POINT</a></li>
+                        <li><a href="sub_brand.html">전체브랜드보기</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!--#brands-->
+        </div>
+        <div class="submenu">
+            <div class="s-menu clearfix" id="spc-magazine">
+                <div class="left">
+                    <h2>SPC Magazine</h2>
+                    <p>SPC 가장 빠르게 만나는 SPC그룹 소식<br>SPC MAGAZINE은 SPC 그룹 임직원, 가맹점, 고객을 위한 공간으로<br> 그룹의 다양한 소식을 가장 먼저 전해드리고 있습니다.<br> 행복한 이야기와 유익한 정보를 담아내 보여드리고자합니다.
+                    </p>
+                </div>
+                <div class="right">
+                    <p><a href="#" class="magazine">SPC 매거진 바로가기</a></p>
+                </div>
+            </div>
+            <!--#spc-magazine-->
+        </div>
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="social-share">
+                <div class="left">
+                    <h2>사회공헌</h2>
+                    <p>SPC행복한재단은 SPC그룹의 ‘國利民福 (국리민복)에 寄與(기여) 한다’는<br> 회사설립이념 및 사훈에 따라 우리사회의 소외되고 어려운 이웃들에 대한<br> 복지사업을 수행하여 사회복지 증진에 기여함을 목적으로 2011년 12월에<br> 설립하였습니다 SPC행복한재단이 생각하는 최선의 복지사업은<br> 단순히 거저 주는 것이 아니라, 어려운 환경과 장애로 인해 꿈과 희망을<br> 잃어버린 이웃들에게 다시 희망을 찾고 스스로의 힘으로 행복하게<br> 살아갈 수 있도록, 배움의 기회와 일자리를 제공하는 것이라고 생각합니다.</p>
+                </div>
+                <div class="right">
+                    <p><a href="sub_social.html">사회공헌 소식 보러가기</a></p>
+                </div>
+            </div>
+            <!--#social-share-->
+        </div>
+
+        <div class="submenu">
+            <div class="s-menu clearfix" id="job">
+                <div class="left">
+                    <h2>인재</h2>
+                    <p>SPC그룹의 핵심가치는 SPC 문화를 구성하는 신조이며 최고의 기업으로<br> 성장할 수 있었던 성공 DNA 입니다.
+                        핵심가치를 지키고 실천할 때<br> SPC그룹이 추구하는 행복한 세상이 펼쳐 집니다.</p>
+                </div>
+                <div class="right">
+                    <ol class="lnb">
+                        <li><a href="#" class="gtjob">인재채용</a></li>
+                        <li><a href="sub_job.html">인재양성</a></li>
+                    </ol>
+                </div>
+                <!--.right-->
+            </div>
+            <!--#job-->
+        </div>
+        <!--.submenu-->
+    </header>
+
+    <div class="sub_banner">
+        <img src="image/spc.jpg" alt="메인배너">
+    </div>
+
+    <section id="sec1">
+        <div class="title-wrap1 clearfix">
+            <h2>CI</h2>
+            <h3>상생의 조화<br><span>그 행복을 담다</span></h3>
+        </div>
+        <div class="ci-txt-wrap">
+            <p>
+                SPC의 역사는 파란 하늘, 황금빛 태양 아래 건강하게 익은 밀알 한 알에서 시작되었습니다<br>
+                모든 제품 하나 하나, 맛과 정성을 담고 69년을 한결같이, 상생의 가치를 지켜온 SPC.<br> 많은 분들의 넘치는 사랑을 받았으며 대한민국 으뜸의 자리에도 올랐습니다.<br>
+                SPC그룹은 창립이래 지켜온 나눔과 상생의 가치를 새로운 CI를 통해 다시 한번 되새기고자 합니다.<br>
+                새 로고의 두 가지 컬러는 파란 하늘과 황금빛 태양을 의미합니다.<br>
+                로고의 모양은 정성을 담은 그릇이자, 희망이 가득 찬 상생의 그릇이며 함께<br> 나누고 더불어 기뻐하는 임직원, 협력사, 고객들의 행복한 미소입니다.<br><br>
+                함께 나누는 기쁨, Happy Smile, SPC
+            </p>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="title-wrap2">
+            <h2>삼미당 정신</h2>
+            <p>가장 맛있고 건강한 빵으로 세상을 행복하게 만들겠다는 SPC그룹의 꿈은 SPC삼립의 창업자 초당 허창성 명예회장이<br> 1945년 황해도 옹진에
+                문을 연 작은 제과점 '상시당'에서 시작되었습니다. 제과 제빵을 천직으로 여기며, 최고의 빵을 만들기 위해<br> 단 하나의 빵도 소홀히 하지 않던
+                상미당 정신은 70년이 지난 오늘날까지 이어지고 있습니다.</p>
+            <div>
+                <img src="image/sangmedangStory.jpg" alt="">
+                <img src="image/sangmedangStory2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="ceo-wrap clearfix">
+            <h2>CEO 인사말</h2>
+            <div class="ceo-photo">
+                <img src="image/ceo.jpg" alt="">
+            </div>
+            <div class="ceo-txt-wrap">
+                지금까지 SPC그룹이 걸어온 길은 정직한 맛으로 행복한 세상을
+                만들기 위해 노력해온 도전과 혁신의 역사였습니다. 최고의
+                제품을 만들기 위해 연구개발에 끊임없는 노력을 쏟아왔을 뿐만
+                아니라 차별화된 마케팅을 펼쳐 삼립식품과 샤니, 파리바게뜨,
+                배스킨라빈스, 던킨도너츠 등 SPC그룹의 브랜드를 국내 업계의
+                독보적인 1위 브랜드로 성장시켰습니다. 현재 중국을 비롯해
+                미국, 프랑스, 베트남, 싱가포르에 진출해 한국 베이커리의
+                우수성을 해외시장에 널리 알리고 있습니다<br>이제 SPC그룹은 지금까지 쌓아온 역량과 성과를 바탕으로 새로운 도약을 시도합니다. 2030년까지 매출 20조원의
+                '그레이트푸드컴퍼니'로 성장하는 비전을 실현하려 합니다. 시대를 앞서 통찰하고 변화를 선도해온 SPC그룹에게는 그 길이
+                행복한 세상을 앞당기는 가슴 설레는 도전이 될 것이라 믿습니다.<br>
+
+                또한 SPC그룹은 기업의 사회적 책임을 다하는 데 최선의 노력을 다할 것입니다. 이미 SPC행복한재단, SPC해피봉사단을 중심으로
+                다양한 사회공헌 활동을 펼치고 있습니다. 먼저 대리점과 가맹점이 동반성장할 수 있도록 지원하고 있으며, 매장에서 일하는
+                아르바이트생들도 꿈을 펼칠 수 있도록 돕고 있습니다. 나아가 우리사회의 소외된 이웃들을 위해서도 나눔과 상생을 적극 실천하고
+                있습니다.<br>
+
+                SPC그룹은 세계인에게 사랑 받는 글로벌 기업의 미래를 향해 도전을 멈추지 않을 것입니다. 아울러 언제나 정직한 맛, 즐거운
+                감동을 전하며 세상을 더욱 건강하고 행복하게 만들어가겠습니다. 모두의 더 나은 내일을 위해 나아가는 SPC그룹의 새로운 모습을
+                기대해주시기 바랍니다. <br><br>
+
+                감사합니다.<br><br>
+                대표 허영인
+            </div>
+        </div>
+    </section>
+
+    <div class="family-company clearfix">
+        <ul class="family-company-wrap">
+            <li><a href="#"><img src="image/footer/spc_family1.png" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/footer/spc_family7.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+
+    <footer>
+
+        <div class="footer-wrap">
+            <div class="footer-top clearfix">
+                <ul class="link">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">이메일수집거부</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">거래희망사전등록</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+
+                <div class="family-list">
+                    <!--<select name="" id=""></select>-->
+                    <a href="#">브로셔 다운로드</a>
+                    <select>
+                        <option value="family-site">
+                            Family Site
+                        </option>
+                        <option value="family-site">
+                            (주)비알코리아
+                        </option>
+                        <option value="family-site">
+                            (주)spc삼립
+                        </option>
+                        <option value="family-site">
+                            SPC PACK
+                        </option>
+                        <option value="family-site">
+                            SPC GFS
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom clearfix">
+                <div class="info">
+                    <div><img src="image/footer/logo_footer.png" alt="푸터로고"></div>
+                    <p>서울시 서초구 양재동 남부순환로2620 (양재동 11 - 149) SPC그룹 <br>COPYRIGHT SPC ALL RIGHTE RESERVED</p>
+                </div>
+
+                <div class="sns">
+                    <a href="#"><img src="image/footer/facebook.png" alt="sns"></a>
+                    <a href="#"><img src="image/footer/instagram.png" alt="sns"></a>
+                </div>
+            </div>
+            <!--bottom-->
+        </div>
+        <!--footer-wrap-->
+    </footer>
+</body></html>

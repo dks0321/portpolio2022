@@ -1,0 +1,220 @@
+@charset 'utf-8';
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+li {
+    float: left;
+}
+ul:after, ol:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%; 
+    /*html 기본 폰트사이즈 16px와 같음*/
+}
+img {
+    border: none;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*header : #top*/
+#top {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.7);
+}
+.inbox {
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#logo {
+    display: block;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    /*outline: 3px solid lime;*/
+    text-align: center;
+}
+#logo img {
+    /*width: 100%;*/
+    height: 50%;
+    position: relative;
+    top: 25%;
+}
+
+/*GNB 내비게이션*/
+#gnb {
+    position: absolute;
+    right: 2%;
+    top: 40px;
+}
+#gnb li {
+    margin: 0 10px;
+}
+/*#gnb li a {
+    color: #fff;
+}*/
+#gnb li a:hover {
+    color: lime;
+    text-decoration: overline;
+}
+#gnb li:hover {
+    transform: scale(1.2);
+}
+
+/*선택된 메뉴*/
+.selM {
+    transform: scale(1.2);
+}
+.selM a {
+    color: lime;
+    text-decoration: overline;
+}
+
+
+/*섹션별 페이지 디자인*/
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*개별페이지 디자인*/
+#page1 {
+    background: #000 url(../images/cover.jpg) no-repeat center/cover;
+}
+#page2 {
+    background: url(../images/cover2.jpg) no-repeat center/cover;
+}
+#page3 {
+    background: url(../images/cover3.jpg) no-repeat center/cover;
+}
+#page4 {
+    background: url(../images/cover4.jpg) no-repeat center/cover;
+}
+
+/*갤러리 박스*/
+.gbox {
+    width: 20%;
+    height: 300px;
+   /* outline: 3px solid red;*/
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+.gbox img {
+    width: 100%;
+    position: absolute;
+    box-shadow: 6px 6px 6px #333;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+/*이미지 개별 디자인*/
+/*왼쪽2*/
+.i1 {
+    top: -40%;
+    left: -210%;
+    transform: scale(0.8);
+    opacity: 0;
+    cursor: default !important;
+}
+
+/*왼쪽1*/
+.i2 {
+    top: -20%;
+    left: -110%;
+    transform: scale(0.9);
+}
+
+/*중앙*/
+.i3 {
+    top: 0%;
+    left: 0;
+    transform: scale(1);
+}
+
+/*오른쪽1*/
+.i4 {
+    top: -20%;
+    left: 110%;
+    transform: scale(0.9);
+}
+
+/*오른쪽2*/
+.i5 {
+    top: -40%;
+    left: 210%;
+    transform: scale(0.8);
+    opacity: 0;
+    cursor: default !important;
+}
+
+/*이동버튼*/
+.abtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*왼쪽버튼*/
+.prev {
+    left: 10%;
+}
+/*오른쪽버튼*/
+.next {
+    right: 10%;
+}
+
+/*섹션3 - 영화관파트, swiper 플러그인 적용하기*/
+.swiper-container {
+    width: 250px;
+    height: 370px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+

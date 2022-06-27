@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Playfair Display', serif;
+*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-size: 14px;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/*page1*/
+main {
+    position: relative;
+    overflow: hidden;
+}
+.top_btn {
+    width: 50px;
+    height: 50px;
+    background-color: #c5c9b0;
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 50%;
+    color: #737373;
+    cursor: pointer;
+    z-index: 500;
+}
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff9ee;
+}
+#page1 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.gnb_wrap {
+    width: 30%;
+}
+.gnb_wrap ul {
+    display: flex;
+    justify-content: space-around;
+}
+.gnb_wrap ul li a {
+    color: #737373;
+    font: 1.2rem;
+    font-weight: 500;
+}
+.gnb_wrap ul li:hover a {
+    text-decoration: underline;
+}
+.slide_wrap {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main_slide {
+    position: absolute;
+    display: none;
+}
+.main_slide.on {
+    display: block;
+}
+.main_slide img {
+    width: 800px;
+}
+.main_txt_box {
+    width: 100%;
+    position: absolute;
+    left: 68%;
+    bottom: 40%;
+}
+.main_txt_box h2 {
+    font-size: 2.1rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+.main_txt_box p {
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+/*page2*/
+#page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.section_name {
+    font-family: 'Roboto Mono', monospace;
+    color: #737373;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 13%;
+    font-size: 2.2rem;
+}
+.service_wrap {
+    width: 879px;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.service_wrap>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.serive_exp {
+   width: 280px;
+    height: 280px;
+    border-radius: 80px;
+    background-color: #e0e0e0;
+    box-shadow: 4px 2px 12px rgba(0,0,0,.3);
+}
+.serive_exp:hover {
+    box-shadow: none;
+}
+.serive_exp span {
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+.serive_exp p {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 1rem; 
+}
+.service_img {
+    width: 280px;
+    height: 280px;
+    border-radius: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 4px 2px 12px rgba(0,0,0,.3);
+}
+.service_img:hover {
+    box-shadow: none;
+    opacity: .5;
+}
+.service_img>img {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*page3*/
+#page3 {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../image/cotton.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.store {
+    position: relative;
+}
+.store_wrap::before {
+    display: block;
+    clear: both;
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+}
+.store_wrap {
+    padding-top: 10%;
+    padding: 10% 100px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.store_box {
+    height: inherit;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+.store_txt {
+    padding: 20px 30px;
+    background-color: #fff;
+    z-index: 1;
+    height: 20%;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+.store_txt>h4 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.store_txt>p {
+   font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+/*page4*/
+#page4 {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+#page4>figure>img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+}
+.contact_wrap {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+.contact_img_box {
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    overflow: hidden;
+}
+.contact_img_box img {
+    height: inherit;
+}
+.contact_txt_box>h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+.contact_txt_box>p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+.contact_btn {
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Roboto Mono', monospace;
+}
+.contact_btn>a{color: #333;}
+.contact_btn::after {
+    display: block;
+    clear: both;
+    content: "";
+    width: 90px;
+    height: 20px;
+    background-color: lightblue;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+    z-index: -1;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #fff9ee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.logo_f {
+   font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+}
+.footer_info {
+    margin-top: 20px;
+}
+.footer_info>div>span>a {
+    color: #333;
+}
+.footer_info>div:first-child {
+    margin-bottom: 10px;
+}
+.footer_info>div>span {
+    margin-right: 10px;
+}
+.footer_right {
+    margin-right: 30px;
+}
+.call_num {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Roboto Mono', monospace;
+}
+.call_num>span>a {
+    color: #333;
+}
+.footer_right>p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.footer_right>p>span{
+    margin-left: 10px;
+}
+
+
+
+

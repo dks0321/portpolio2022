@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>spc-way</title>
+
+	<link rel="stylesheet" href="css/sub_header.css">
+	<link rel="stylesheet" href="css/sub_footer.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/sub_header.js"></script>
+	<script>
+		$(window).scroll(function(){
+			
+			var scTop = $(this).scrollTop();
+			console.log(scTop);
+			
+			$('.vision-wrap').animate({
+				opacity: '1'
+			},1000);
+			
+			if(scTop>950){
+				$('.global-txt1').animate({
+					marginTop: '50px',
+					opacity: '1'
+				},1000);
+			}
+			if(scTop>1630){
+				$('.global-txt2').animate({
+					marginTop: '50px',
+					opacity: '1'
+				},1000);
+			}
+			if(scTop>2240){
+				$('.global-txt3').animate({
+					marginTop: '50px',
+					opacity: '1'
+				},1000);
+			}
+			
+		});
+	
+	</script>
+
+	<style>
+		section {
+			width: 100%;
+		}
+		.vision-wrap {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			margin-top: 180px;
+			text-align: center;
+			font-family: 'Nanum Gothic', sans-serif;
+			opacity: 0;
+		}
+		.vision {
+			font-size: 30px;
+		}
+        .vision:after {
+            display: block;
+            content: "";
+            width: 50px;
+            border: 1px solid  rgb(254,206, 0);
+            margin: 15px auto 0px;
+        }
+		.vision-eng {
+			font-size: 30px;
+			font-weight: 400;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.vision-wrap>h3 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.global-goal {
+			width: 100%;
+			height: 400px;
+			margin: 200px auto 0;
+			text-align: center;
+			background-image: url(image/glo.jpg);
+			background-repeat: no-repeat;
+            background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		.global-goal>div {
+			height: 400px;
+			font-size: 24px;
+			padding-top: 150px;
+			box-sizing: border-box;
+			font-family: 'Noto Serif KR', serif;
+			/*font-weight: lighter;*/
+			color: #fff;
+			background-color: rgba(0,0,0,0.4);
+		}
+		.global-wrap {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			/*margin-bottom: 100px;*/
+		}
+		.global-box {
+			/*margin-top: 100px;*/
+			margin-bottom: 50px;
+		}
+		.global-left {
+			width: 50%;
+			height: 570px;
+			margin-top: 100px;
+			float: left;
+		}
+		.global-left img {
+			margin-left: 100px;
+		}
+		.global-right {
+			width: 50%;
+			height: 570px;
+			margin-top: 100px;
+			float: right;
+		}
+		.global-right img {
+			margin-left: 100px;
+		}
+		.global-txt1 {
+			height: 570px;
+			font-size: 20px;
+			font-family: 'Nanum Gothic', sans-serif;
+			text-align: center;
+			word-break: keep-all;
+			margin-top: 230px;
+			padding: 0 40px;
+			opacity: 0;
+			text-align: justify;
+		}
+		.global-txt1:after {
+			display: block;
+			content: "";
+			width: 100px;
+			margin: 0 auto;
+			border: 1px solid rgb(254,206, 0);
+			margin-top: 50px;
+		}
+		.global-txt2 {
+			height: 570px;
+			font-size: 20px;
+			font-family: 'Nanum Gothic', sans-serif;
+			text-align: center;
+			word-break: keep-all;
+			margin-top: 230px;
+			padding: 0 40px;
+			opacity: 0;
+			text-align: justify;
+		}
+		.global-txt2:after {
+			display: block;
+			content: "";
+			width: 100px;
+			margin: 0 auto;
+			border: 1px solid rgb(254,206, 0);
+			margin-top: 50px;
+		}
+		.global-txt3 {
+			height: 570px;
+			font-size: 20px;
+			font-family: 'Nanum Gothic', sans-serif;
+			text-align: center;
+			word-break: keep-all;
+			margin-top: 230px;
+			padding: 0 40px;
+			opacity: 0;
+			text-align: justify;
+		}
+		.global-txt3:after {
+			display: block;
+			content: "";
+			width: 100px;
+			margin: 0 auto;
+			border: 1px solid rgb(254,206, 0);
+			margin-top: 50px;
+		}
+		
+	</style>
+	
+	
+</head>
+
+<body>
+	<header id="top">
+		<div class="inner-top clearfix">
+			<!--header 안쪽 묶어주는 태그-->
+
+			<h1 class="header-logo"><a href="../index.html"><img src="image/header/logo_header.png" alt="logo"></a></h1>
+
+			<nav id="gnb">
+				<ul class="gnb-list clearfix">
+					<li class="menu"><a href="#">COMPANY</a></li>
+					<li><a href="#">브랜드</a></li>
+					<li><a href="#">SPC매거진</a></li>
+					<li><a href="#">사회공헌</a></li>
+					<li><a href="#">인재</a></li>
+				</ul>
+			</nav>
+
+			<div class="lang"> <a href="#">ENG</a></div>
+		</div>
+		<!--.inner-top-->
+
+
+		<div class="submenu">
+			<div class="s-menu clearfix" id="company">
+				<div class="left">
+					<h2>Company</h2>
+					<p>SPC의 역사는 파란 하늘, 황금빛 태양 아래 건강하게 맛과 정성을 담고<br> 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나 69년을<br> 한결같이 익은 밀알 한 알에서 시작되었습니다 모든 제품 하나 하나,<br> 상생의 가치를 지켜온 SPC. 많은 분들의 넘치는 사랑을 받았으며<br> 대한민국 으뜸의 자리에도 올랐습니다.<br>
+						<br><span>함께 나누는 기쁨 Happy Smile, SPC</span>
+					</p>
+				</div>
+				<div class="right">
+					<ol class="lnb">
+						<li><a href="sub_spc.html">SPC</a></li>
+						<li><a href="sub_spcway.html">SPC WAY</a></li>
+						<li><a href="sub_globalspc.html">Global SPC</a></li>
+						<li><a href="sub_foodlab.html">식품생명공학연구소</a></li>
+					</ol>
+				</div>
+				<!--.right-->
+			</div>
+			<!--#company-->
+		</div>
+		<div class="submenu">
+			<div class="s-menu clearfix" id="brands">
+				<div class="left">
+					<h2>Brands</h2>
+					<p>1945년 상미당으로 출발한 SPC그룹의 반세기 넘는 역사와 전통을<br> 이어온 기업으로서 누구에게나 친숙한 수많은 히트제품을 선보이며<br> 제빵 산업의 발전을 이끌고 국민 식생활 개선에 이바지해왔습니다<br> 이제는 이러한 경험을 기반으로 식품산업을 선도하는<br> 세계적인 브랜드로 거듭나겠습니다.</p>
+				</div>
+				<div class="right">
+					<ol class="lnb brand-lnb">
+						<li><a href="sub_brand_parisbaguette.html">PARIS BAUGUETTE</a></li>
+                        <li><a href="sub_brand_samlip.html">SAMLIP</a></li>
+                        <li><a href="sub_brand_baskinrobins.html">BASKIN ROBINS</a></li>
+                        <li><a href="sub_brand_dunkin.html">DUNKIN</a></li>
+                        <li><a href="sub_brand_pascucci.html">PASCUCCI</a></li>
+                        <li><a href="sub_brand_shakeshake.html">SHAKE SHAKE</a></li>
+                        <li><a href="sub_brand_eggslut.html">EGG SLUT</a></li>
+                        <li><a href="sub_brand_happypoint.html">HAPPY POINT</a></li>
+                        <li><a href="sub_brand.html">전체브랜드보기</a></li>
+					</ol>
+				</div>
+			</div>
+			<!--#brands-->
+		</div>
+		<div class="submenu">
+			<div class="s-menu clearfix" id="spc-magazine">
+				<div class="left">
+					<h2>SPC Magazine</h2>
+					<p>SPC 가장 빠르게 만나는 SPC그룹 소식<br>SPC MAGAZINE은 SPC 그룹 임직원, 가맹점, 고객을 위한 공간으로<br> 그룹의 다양한 소식을 가장 먼저 전해드리고 있습니다.<br> 행복한 이야기와 유익한 정보를 담아내 보여드리고자합니다.
+					</p>
+				</div>
+				<div class="right">
+					<p><a href="#" class="magazine">SPC 매거진 바로가기</a></p>
+				</div>
+			</div>
+			<!--#spc-magazine-->
+		</div>
+
+		<div class="submenu">
+			<div class="s-menu clearfix" id="social-share">
+				<div class="left">
+					<h2>사회공헌</h2>
+					<p>SPC행복한재단은 SPC그룹의 ‘國利民福 (국리민복)에 寄與(기여) 한다’는<br> 회사설립이념 및 사훈에 따라 우리사회의 소외되고 어려운 이웃들에 대한<br> 복지사업을 수행하여 사회복지 증진에 기여함을 목적으로 2011년 12월에<br> 설립하였습니다 SPC행복한재단이 생각하는 최선의 복지사업은<br> 단순히 거저 주는 것이 아니라, 어려운 환경과 장애로 인해 꿈과 희망을<br> 잃어버린 이웃들에게 다시 희망을 찾고 스스로의 힘으로 행복하게<br> 살아갈 수 있도록, 배움의 기회와 일자리를 제공하는 것이라고 생각합니다.</p>
+				</div>
+				<div class="right">
+					<p><a href="sub_social.html">사회공헌 소식 보러가기</a></p>
+				</div>
+			</div>
+			<!--#social-share-->
+		</div>
+
+		<div class="submenu">
+			<div class="s-menu clearfix" id="job">
+				<div class="left">
+					<h2>인재</h2>
+					<p>SPC그룹의 핵심가치는 SPC 문화를 구성하는 신조이며 최고의 기업으로<br> 성장할 수 있었던 성공 DNA 입니다.
+						핵심가치를 지키고 실천할 때<br> SPC그룹이 추구하는 행복한 세상이 펼쳐 집니다.</p>
+				</div>
+				<div class="right">
+					<ol class="lnb">
+						<li><a href="#" class="gtjob">인재채용</a></li>
+						<li><a href="sub_job.html">인재양성</a></li>
+					</ol>
+				</div>
+				<!--.right-->
+			</div>
+			<!--#job-->
+
+		</div>
+		<!--.submenu-->
+	</header>
+
+	<div class="sub_banner"><img src="image/globalspc.jpg" alt=""></div>
+
+	<section>
+		<div class="vision-wrap">
+			<h2 class="vision">비전</h2>
+			<h2 class="vision-eng">GREAT FOOD COMPANY</h2>
+			<h3>SPC그룹의 비전은 전 세계인에게 존경받고 지속 성장 가능한<br>
+				경쟁력을 갖춘 글로벌 종합식품기업이 되는 것입니다.</h3>
+		</div>
+		<div class="global-goal">
+			<div>
+			SPC그룹은 2000년대 후반부터 적극적으로 해외시장 진출을 추진하여 중국과 미국,<br> 프랑스, 베트남, 싱가포르에서 파리바게뜨 브랜드 매장을 운영하고 있습니다.<br> 아시아, 중동, 북미, 유럽 등 신시장을 개척해 국경과 언어, 문화를 초월한 진취적인 도전으로<br> 행복한 맛을 더 넓은 세상에 전하며 가장 사랑 받는 글로벌 기업이 되겠습니다
+			</div>
+		</div>
+		<div class="global-wrap">
+			<div class="global-box clearfix">
+				<div class="global-left">
+					<img src="image/china.jpg" alt="">
+				</div>
+				<div class="global-right">
+					<p class="global-txt1">SPC그룹은 중국에서 고급 베이커리 기업으로 확고하게 자리 잡아가고 있습니다. 2004년 상하이에 파리바게뜨 1호점을 개설한 이후 적극 적으로 사업을 확장해 베이징, 난징, 다롄 등
+						중국 주요 도시에 230개가 넘는 매장을 성공적으로 운영하고 있습니다. <br><br>
+						파리바게뜨가 중국 고객의 사랑을 받으며 성공할 수 있었던 것은 철저한 현지화 전략 때문입니다. 1990년대 중반부터 현지에 직원을 파견해 중국인의 식문화와 기호를 철저히 연구, 분석하여 치밀하게 진출을 준비했고, 이를 바탕으로 ‘육송빵’ 등 고객의 입맛에 맞춘 다양한 메뉴를 선보일 수 있었습니다. <br><br>
+						2005년부터 꾸준히 진행해온 ‘사랑의 케이크 교실’을 비롯해 소외계층 청소년 제과제빵교육 과정운영, 아동복지시설 지원 등 다양한 사회공헌활동을 펼쳐 고객과 지역사회에 보다 친근하게 다가가려 노력한 것도 성공 요인 중 하나입니다. 앞으로 중국 전역으로 매장을 확대하여 중국에서 가장 사랑받는 베이커리 브랜드로 성장할 것입니다.</p>
+				</div>
+			</div>
+			<div class="global-box clearfix">
+				<div class="global-left">
+					<p class="global-txt2">세계를 향한 SPC그룹의 도전은 동남아시아에서도 활발하게 펼쳐집니다. 2012년에 베트남 호찌민에 파리바게뜨 첫 매장을 열고 차원 높은 베이커리 문화의 탄생을 알렸습니다. 이어
+						호찌민, 하노이에 연이어 매장을 추가로 오픈하여 성공적으로 운영하고 있습니다.<br><br>
+						외식문화의 보편화로 빵과 카페 문화가 발달한 베트남에서도 사전 조사를 통한 철저한 현지화 전략을 기반으로 ‘반미(Banhmi) 바게트 샌드위치’를 비롯해 현지 고객의 취향과 입맛을 고려한 다양한 제품을 출시해 큰 호응을 얻었습니다. 아울러 고급스러운 인테리어와 편안한 분위기로 더욱 인기를 모으고 있습니다.
+						싱가포르에도 2012년에 진출하여 현지 1호점을 오픈했고 이어 2013년에 2호점을 열었습니다. 다국적 문화가 어우러진 싱가포르에서 세계적인 베이커리 브랜드들과 어깨를 나란히
+						하며 최고급 베이커리 카페로 인지도를 높여가고 있습니다. 앞으로 동남아시아는 물론 인도 등 서남아시아와 중동 지역으로도 시장을 계속 확대해 나갈 것입니다.</p>
+				</div>
+				<div class="global-right">
+					<img src="image/vietnam.jpg" alt="">
+				</div>
+			</div>
+			<div class="global-box clearfix">
+				<div class="global-left">
+					<img src="image/usa.jpg" alt="">
+				</div>
+				<div class="global-right">
+					<p class="global-txt3">
+						세계 최대의 베이커리 시장인 미국에서 SPC그룹이 새로운 가능성을 열어갑니다. 해외 진출 초기인 2005년부터 미국 시장에 진출해 L.A에 파리바게뜨 1호점을 오픈한 것을 시작으로 2013년 상반기까지 L.A, 샌프란시스코 등 서부지역과 뉴욕, 뉴저지, 필라델피아 등 동부지역에 약 65 개의 매장을 운영하고 있습니다. <br><br>
+						파리바게뜨 매장은 세련된 인테리어, 독특한 셀프서비스 시스템과 함께 커피와 어울리는 다양한 종류의 베이커리 제품으로 미국 고객의 시선과 미각을 사로잡았습니다. 특히 뛰어난 맛의 페스츄리와 예쁘게 장식된 케이크의 인기가 높으며, 빵과 샌드위치, 케이크, 음료 모두를 한 곳에서 즐길 수 있는 편의성도 현지 고객들에게 좋은 반응을 얻고 있습니다. 이러한 성과는 2002년 현지 법인을 설립한 뒤 철저한 시장조사와 현지 트렌드 분석을 통한 현지화 전략을 펼쳤기 때문에 가능했습니다. 아울러 케이크 교실, 샌드위치 교실 등 고객이 직접 참여하는 체험마케팅을 꾸준히 진행한 것도 큰 도움이 되었습니다. SPC그룹은 미국 각 지역의 매장을 지속적으로 늘려갈 뿐만 아니라 캐나다에도 새롭게 진출하여 북미시장을 더욱 확대해
+						나갈 것입니다.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="family-company clearfix">
+		<ul class="family-company-wrap">
+			<li><a href="#"><img src="image/footer/spc_family1.png" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family2.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family3.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family4.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family5.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family6.jpg" alt=""></a></li>
+			<li><a href="#"><img src="image/footer/spc_family7.jpg" alt=""></a></li>
+		</ul>
+	</div>
+
+
+	<footer>
+
+		<div class="footer-wrap">
+			<div class="footer-top clearfix">
+				<ul class="link">
+					<li><a href="#">사이트맵</a></li>
+					<li><a href="#">이메일수집거부</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">거래희망사전등록</a></li>
+					<li><a href="#">오시는 길</a></li>
+				</ul>
+
+				<div class="family-list">
+					<!--<select name="" id=""></select>-->
+					<a href="#">브로셔 다운로드</a>
+					<select>
+						<option value="family-site">
+							Family Site
+						</option>
+						<option value="family-site">
+							(주)비알코리아
+						</option>
+						<option value="family-site">
+							(주)spc삼립
+						</option>
+						<option value="family-site">
+							SPC PACK
+						</option>
+						<option value="family-site">
+							SPC GFS
+						</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div class="footer-bottom clearfix">
+				<div class="info">
+					<div><img src="image/footer/logo_footer.png" alt="푸터로고"></div>
+					<p>서울시 서초구 양재동 남부순환로2620 (양재동 11 - 149) SPC그룹 <br>COPYRIGHT SPC ALL RIGHTE RESERVED</p>
+				</div>
+
+				<div class="sns">
+					<a href="#"><img src="image/footer/instagram.png" alt="sns"></a>
+					<a href="#"><img src="image/footer/facebook.png" alt="sns"></a>
+				</div>
+			</div>
+			<!--bottom-->
+		</div>
+		<!--footer-wrap-->
+	</footer>
+</body>
+
+</html>

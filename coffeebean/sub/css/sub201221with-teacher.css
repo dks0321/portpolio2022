@@ -1,0 +1,233 @@
+@charset 'utf-8';
+
+/*reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, ol ,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/*float 해제하는 가상선택자*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*폰트
+font-family: 'Merriweather', serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*******header*********************/
+header {
+	width: 100%;
+	background-color: white;
+}
+.lnb {
+	height: 40px;
+	background-color: lightgray;
+}
+.inner-lnb {
+	width: 1200px;
+	margin: 0 auto;
+}
+.inner-lnb ul{
+	float: right;
+}
+.inner-lnb ul li {
+	float: left;
+	line-height: 40px;
+	margin-right: 10px;
+}
+header .lnb .inner-lnv>ul>li:last-child {
+	width: 60px;
+	margin-right: 0;
+	background: saddlebrown url(../img/ico_user_info_line.png) no-repeat center;
+	text-indent: -9999px;
+}
+header .lnb .inner-lnb>ul>li>a {
+	color: #333;
+	display: block;
+}
+.inner-lnb ul li a:hover {
+	font-weight: bold;
+	color: rgb(47,28,17);
+}
+.inner-header {
+	width: 1200px;
+	margin: 0 auto;
+}
+.inner-header h1 {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+.inner-header h1 img {
+	margin-top: 15px;
+}
+.inner-header nav ul {
+	float: left;
+}
+.inner-header nav ul>li {
+	float: left;
+	line-height: 100px;
+	font-family: Arial;
+	padding: 0 30px;
+}
+header .inner-header nav ul li a {
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(47,28,17);
+	letter-spacing: -0.3px;
+}
+header .inner-header nav ul li a:hover {
+	color: rgb(207,102,26);
+}
+
+#btnSearch {
+	float: right;
+}
+#btnSearch a {
+	width: 20px;
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
+	background: url(../img/ico_search.png) no-repeat center;
+}
+
+/*********section*******************************/
+section {
+	width: 100%;
+}
+section .sub-menu {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(105,81,157);
+}
+section .sub-menu ul {
+	float: left;
+	width: 1200px;
+	margin: 0 auto;
+}
+section .sub-menu ul li {
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+} 
+section .sub-menu ul li a {
+	color: #fff;
+}
+.mainbanner img {
+	width: 100%;
+}
+.value {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	
+}
+.value ul {
+	float: left;
+}
+.value ul li {
+	float: left;
+	margin-right: 100px;
+	text-align: center;
+	outline: 2px solid red;
+}
+.value ul li:last-child {
+	margin-right: 0;
+}
+.value ul li dl {
+	margin-top: 15px;
+}
+.value ul li dl dt {
+	margin-bottom: 10px;
+}
+
+.best-banner {
+	margin-top: 50px;
+	padding-top: 50px;
+	border-top: 2px solid lightgray;
+	text-align: center;
+	width: 100%;
+	height: 900px;
+	background: url(../img/bg_coffeebean-korea_banner02.jpg) no-repeat center;
+}
+.best-banner>h3 {
+	font-family: 'Nanum Gothic', sans-serif;
+	padding-bottom: 20px;
+	line-height: 30px;
+}
+.best-banner>h2 {
+	font-family: 'Nanum Gothic', sans-serif;
+	color: darkorange;
+	font-size: 40px;
+}
+.coffee-wrap {
+	margin-top: 50px;
+	padding-top: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.coffee-wrap .coffee h2 {
+	color: saddlebrown;
+	font-family: 'Merriweather', serif;
+}
+.coffee-wrap .coffee h4 {
+	color: saddlebrown;
+	font-family: 'Merriweather', serif;
+	margin-top: 10px;
+}
+
+.coffee-wrap .coffee p {
+	margin-top: 10px;
+	line-height: 30px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.coffee-wrap .coffee ul {
+	float: left;
+}
+.coffee-wrap .coffee ul li {
+	float: left;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.coffee-wrap .coffee ul li a {
+	display: inline-block;
+	margin: 2%;
+	box-sizing: border-box;
+}
+
+.coffee-wrap .coffee ul li a img {
+	transition: all 0.5s;
+}
+.coffee-wrap .coffee ul li:hover a img {
+	transform: scale(1.5);
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
